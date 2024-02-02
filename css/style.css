@@ -1,0 +1,902 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Jura';
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url(../fonts/Jura-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url(../fonts/Jura-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url(../fonts/Jura-Regular.ttf);
+    font-weight: 400;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.p-100 {
+    padding: 100px 0;
+}
+
+.title h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #95411B;
+    text-shadow: 0 5px 7px #95411B;
+    margin-left: 80px;
+}
+
+.btn {
+    border: 1px solid #f3f3f3;
+    padding: 5px 40px;
+    background: none;
+    color: #f3f3f3;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* кнопка вверх */
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000px;
+    transition: .5s;
+}
+
+hr {
+    border-bottom: 2px solid #53377A;
+    filter: blur(2px);
+}
+
+/* шапка */
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.hed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hed img .logo {
+    width: 127px;
+}
+
+.lo_nav {
+    display: flex;
+    gap: 150px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 20px;
+    color: #333333;
+    text-shadow: 3px 4px 7px #53377aa6;
+}
+
+.poisk {
+    display: flex;
+    border: 1px solid #333333;
+    padding: 5px;
+    gap: 15px;
+    margin-left: 167px;
+    width: 170px;
+}
+
+.poisk img {
+    width: 20px;
+}
+
+.kor_izb {
+    margin-left: 30px;
+}
+
+.kor_izb .kor img {
+    width: 28px;
+}
+
+.kor_izb .izb_b img {
+    width: 40px;
+}
+
+/* баннер */
+
+.banner {
+    padding: 190px 80px 150px 80px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/banner1.png);
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+
+.text {
+    margin-left: 80px;
+}
+
+.banner h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.text h1 {
+    font-size: 100px;
+    font-weight: 700;
+    color: #f3f3f3;
+    text-shadow: 0 5px 7px #95411B;
+}
+
+.text p {
+    color: #f3f3f3;
+    font-size: 25px;
+    text-align: left;
+}
+
+.banr .btn {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.banr .btn:hover {
+    color: #95411B;
+    background-color: #f3f3f3;
+}
+
+/* товары */
+
+.kartcki {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 370px);
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 27px;
+    margin: 0 auto;
+}
+
+.kart {
+    display: block;
+    border-radius: 28px;
+    border: 3px solid #95411bb0;
+    box-shadow: 0px 0px 20px 0px #333333ed;
+    padding: 20px;
+}
+
+.tovari h2 {
+    margin-bottom: 33px;
+}
+
+.kart .izb_bb {
+    width: 25px;
+}
+
+.kart .izb {
+    text-align: right;
+}
+
+.kart .svt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kart img .sviter {
+    width: 219px;
+}
+
+.kart h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #95411B;
+    margin-bottom: 18px;
+}
+
+.razm_knop {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.kart .button-active {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+}
+
+.kart button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.kart button:hover {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+}
+
+.nv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.kart p {
+    color: #95411B;
+    font-size: 20px;
+}
+
+.kart button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+/* категории */
+
+.kategori {
+    display: flex;
+    justify-content: space-around;
+    gap: 45 px;
+}
+
+.kateg .kt_img {
+    margin-top: 55px;
+}
+
+.kategori .kat_img3 .kat_img {
+    margin-left: 50px;
+}
+
+.kategori img {
+    cursor: pointer;
+}
+
+.kategori img:hover {
+    transform: scale(1.1);
+}
+
+/* футер */
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    background-color: #333333;
+}
+
+.fot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 94px;
+}
+
+.fot img .logo {
+    width: 127px;
+}
+
+.lo_nav {
+    display: flex;
+    gap: 147px;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav2 a {
+    font-size: 20px;
+    color: #f3f3f3;
+    text-shadow: 3px 4px 7px #53377aa6;
+}
+
+.kontact p {
+    font-size: 20px;
+    color: #f3f3f3;
+    text-shadow: 3px 4px 7px #53377aa6;
+    margin-bottom: 12px;
+}
+
+.kontact h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #f3f3f3;
+    text-shadow: 3px 4px 7px #53377aa6;
+    margin-bottom: 12px;
+    margin-top: 45px;
+}
+
+.kontact .img_fot {
+    display: flex;
+    align-items: center;
+}
+
+/* заголовки */
+
+.zagolovok {
+    display: flex;
+    flex-direction: column;
+}
+
+.zagolovok .glav_kat p {
+    color: #95411bba;
+    font-weight: 500;
+}
+
+.zagolovok .title h2 {
+    margin-left: 0;
+}
+
+.zagolovok .sort p {
+    display: flex;
+    justify-content: end;
+    color: #95411B;
+    font-weight: 600;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.zagolovok .sort p span {
+    color: #95411B;
+    font-weight: 400;
+}
+
+.poisk2 {
+    display: flex;
+    border: 1px solid #95411B;
+    padding: 5px;
+    width: 370px;
+}
+
+.poisk2 p {
+    margin-left: 14px;
+    color: #95411B;
+}
+
+.poisk2 img {
+    width: 22px;
+}
+
+
+/* товары2 */
+
+.tovari {
+    padding-bottom: 100px;
+}
+
+.kartcki {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 370px);
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 37px;
+    row-gap: 27px;
+    margin: 0 auto;
+}
+
+.kart2 {
+    display: block;
+    border-radius: 28px;
+    border: 3px solid #95411bb0;
+    box-shadow: 0px 0px 20px 0px #333333ed;
+    padding: 20px;
+    width: 370px;
+}
+
+.kart2 .izb_bb {
+    width: 25px;
+}
+
+.kart2 .izb {
+    text-align: right;
+}
+
+.kart2 .svt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kart2 img .sviter {
+    width: 219px;
+}
+
+.kart2 h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #95411B;
+    margin-bottom: 18px;
+}
+
+.razm_knop {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.kart2 .button-active {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.kart2 button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.kart2 button:hover {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+}
+
+.nv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.nv p {
+    color: #95411B;
+}
+
+
+.kart p {
+    color: #95411B;
+    font-size: 20px;
+}
+
+.kart2 button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.pagin {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    gap: 10px;
+}
+
+.pagin button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.pagin button:hover {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+}
+
+.pagin .button-active {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+}
+
+
+/* одна карточка */
+
+.one_kart {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #95411B;
+    padding: 20px;
+    margin-bottom: 100px;
+    color: #95411B;
+    width: 1030px;
+    height: 636px;
+}
+
+.one_kart .img_dress {
+    display: flex;
+    align-items: center;
+}
+
+.info_text .izb img {
+    width: 40px;
+}
+
+.info_text .izb {
+    text-align: right;
+}
+
+.info_text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #95411B;
+    text-shadow: 0 5px 7px #95411B;
+}
+
+.one_kart .info_text .pr {
+    color: #95411B;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 22px;
+}
+
+.one_kart .info_text .razm_knop_one {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.one_kart .info_text .razm_knop_one .button-active {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.one_kart .info_text .razm_knop_one button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.one_kart .info_text .razm_knop_one button:hover {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+}
+
+.one_kart .info_text .shtuc {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.one_kart .info_text .shtuc button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.one_kart .info_text .shtuc .button-active {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.one_kart .info_text .korz_onetovar button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    width: 342px;
+    height: 48px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.one_kart .info_text .korz_onetovar button:hover {
+    color: #f3f3f3;
+    background-color: #95411B;
+}
+
+.one_kart .info_text .text_one {
+    font-size: 25px;
+}
+
+/* КОРЗИНА */
+
+.korzina {
+    justify-content: center;
+}
+
+.rast_kor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.korzina .title h2 {
+    margin-bottom: 62px;
+    margin-left: 0;
+}
+
+.korzina .kart_kor {
+    border: 2px solid #95411B;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 830px;
+    height: 195px;
+}
+
+.korzina .kart_kor .k1_kor img {
+    width: 153px;
+    height: 181px;
+}
+
+.kart_kor {
+    display: flex;
+    justify-content: space-between;
+    color: #95411B;
+}
+
+.kart_kor .k2_kor h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #95411B;
+}
+
+.kart_kor .k2_kor .razm_kor {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.kart_kor .k2_kor .razm_kor button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    margin-left: 14px;
+}
+
+.kart_kor .k2_kor .shtuc {
+    display: flex;
+    gap: 15px;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.kart_kor .k2_kor .shtuc button {
+    color: #95411B;
+    font-size: 20px;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.kart_kor .k2_kor .shtuc .button-active {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.kart_kor .k3_kor .del {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.kart_kor .k3_kor p {
+    font-size: 25px;
+    font-weight: 700;
+    color: #95411B;
+}
+
+.kart_kor .k3_kor .korz_onetovar button {
+    color: #95411B;
+    font-size: 25px;
+    border: 1px solid #95411B;
+    width: 156px;
+    height: 48px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.kart_kor .k3_kor .korz_onetovar button:hover {
+    color: #f3f3f3;
+    background-color: #95411B;
+}
+
+.kart_kor .k2_kor {
+    padding-left: 142px;
+}
+
+.kart_kor .k3_kor {
+    padding-left: 20px;
+    border-left: 1px solid #95411B;
+}
+
+/*  */
+
+.kart_kor .k4_kor img {
+    margin-left: 35px;
+    width: 88px;
+    height: 183px;
+    margin-right: 100px;
+}
+
+.korzina .kart_kor {
+    border: 2px solid #95411B;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 830px;
+    height: 195px;
+}
+
+.kart_kor {
+    display: flex;
+    justify-content: space-between;
+    color: #95411B;
+}
+
+.kart_kor .k2_kor .shtu_c {
+    display: flex;
+    gap: 15px;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.kart_kor .k2_kor .shtu_c button {
+    color: #f3f3f3;
+    font-size: 20px;
+    background-color: #95411B;
+    border: 1px solid #95411B;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.kart_kor .k6_kor .del {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.kart_kor .k6_kor p {
+    font-size: 25px;
+    font-weight: 700;
+    color: #95411B;
+}
+
+.kart_kor .k6_kor .korz_onetovar button {
+    color: #95411B;
+    font-size: 25px;
+    border: 1px solid #95411B;
+    width: 156px;
+    height: 48px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.kart_kor .k6_kor .korz_onetovar button:hover {
+    color: #f3f3f3;
+    background-color: #95411B;
+}
+
+.kart_kor .k6_kor {
+    padding-left: 20px;
+    border-left: 1px solid #95411B;
+}
+
+.container {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.rast_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-top: 46px;
+}
+
+.rast_text p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #95411B;
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 85px;
+}
+
+.rast_buttin {
+    margin: 0 auto;
+}
+
+.rast_text {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.rast_buttin button {
+    display: flex;
+    justify-content: center;
+    color: #95411B;
+    font-size: 30px;
+    background-color: #f3f3f3;
+    width: 1030px;
+    padding: 17px 0;
+    border: 3px solid #95411B;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.rast_buttin button:hover {
+    color: #f3f3f3;
+    background-color: #95411B;
+    border: 3px solid #95411B;
+}
